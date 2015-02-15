@@ -1,0 +1,215 @@
+/**
+* Default 
+*/
+
+html, body {
+	margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+aside {
+  position: relative;
+  height: 91%;
+  margin-top: 63px; 
+
+  :after {
+    content: "";
+    background-image: none;
+  }
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 82px;
+}
+
+nav {
+  margin-top: 71px;
+
+  .nav-links {
+    display: none;
+  }
+
+  ul > li {
+  padding: 50px 0; // spacing in between nav items
+  position: relative;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  a {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.intro {
+  display: none;
+}
+
+.copyright {
+  position: absolute;
+  float: left;
+  bottom: 11px; // matches bottom of social media text
+  width: 25%;
+  display: none;
+}
+
+/**
+* Post
+*/
+
+header {
+	height: 100%;
+}
+
+.wrapper {
+  height: 634px;
+  overflow-y: scroll;
+  border: 1px solid $lt-primary;
+  background-color: #EEEAD8;
+  // padding: 42px; 
+  margin: 42px 42px 0 0;
+  border-radius: 2px;
+
+  * {
+    background-color: #EEEAD8;
+  }
+}
+
+.blog-archive {
+  display: none;
+  margin: 34px 79px 0 79px;
+
+  li {
+    border-bottom: 1px solid #D5D0B6;
+    padding-bottom: 29px;
+    margin-top: 26px;
+  }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+  li:hover {
+    border-color: #3D1D00;
+
+    time {
+      color: $clr-primary;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $clr-primary;
+    border: none;
+  }
+
+}
+
+.blog-post {
+  margin: 91px 79px 0 79px;
+  display: none;
+
+  time {
+    margin-bottom: 35px;
+    display: block;
+    width: 100%;
+    text-align: right;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  img {
+    width: 100%;
+    margin-left: -20px;
+    border: 5px solid #fff;
+  }
+}
+
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 41.3%;
+  transform: translate(-13.2%, -81%);
+}
+
+.contact {
+  margin: 0 79px;
+  margin-top: 20px;
+  padding: 5px 0;
+  border-top: 1px dashed #D5D0B6;
+  display: none;
+
+  p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.project-info {
+  position: fixed;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.project-credits {
+  margin-top: 15px;
+  padding-top: 10px;
+  margin-right: 10px;
+  border-top: 1px dashed $dk-primary;
+}
+
+
+/**
+* Page
+*/
+
+.profile-pic {
+  width: 602px;
+  height: 357px;
+  border: 5px solid #fff;
+  margin: 20px 0 5px 60px;
+}
+
+.bio {
+  margin: 27px 79px 0 79px;
+}
+
+.about-content {
+  display: none;
+}
+
+
+/**
+* Work
+*/
+
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.item {
+  float: left;
+  width: 24.3%;
+  margin: 2px;
+
+  img {
+    margin: 2px;
+  }
+}

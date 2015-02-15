@@ -1,0 +1,129 @@
+/**
+* Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/**
+ * Basic styling
+ */
+body {
+  color: $dk-secondary;
+  font-family: $body-font-stack;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 300;
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: $clr-bkgd;
+  position: absolute;
+  display: block;
+
+  &:after {
+    content: "";
+    background-image: url("/images/upfeathers.png");
+    // Background pattern from subtlepatterns.com
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: 30 / 2;
+}
+
+
+
+/**
+ * Images
+ */
+
+
+
+/**
+ * Lists
+ */
+
+
+/**
+ * Links
+ */
+a {
+  color: darken($dk-accent, 10%);
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px dashed darken($dk-accent, 10%);
+  }
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    padding: 25px 0 25px 80px;
+
+    p {
+        padding-top: 0;
+        color: $med-secondary;
+    }
+}
+
+
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+    font-size: 15px;
+    border: 1px solid $lt-primary;
+    border-radius: 3px;
+    background-color: #eef;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: scroll;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+/**
+ * Clearfix
+ */
+
+
+
+/**
+ * Icons
+ */

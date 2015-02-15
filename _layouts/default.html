@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <aside class="col-1-4">
+      <a href="/index.html"><img class="logo nav-structure" src="/images/test/logo-AH.png" /></a>
+      
+      <nav>
+        <ul class="nav-links nav-structure">
+          <!-- <li><a href="/work/">Work</a></li> -->
+          <li><a id="btn-blog" href="/blog/">Blog</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+      
+    </aside>
+
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    <script>
+      var $container = $('#isotope');
+      // init
+      $container.isotope({
+        // options
+        itemSelector: '.item',
+        layoutMode: 'fitRows'
+      });
+    </script>
+
+  </body>
+
+</html>

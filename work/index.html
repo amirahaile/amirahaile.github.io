@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="wrapper isotope" id="isotope">
+ 
+  {% for project in site.projects %}
+  
+  <div class="item">
+    <a href="{{ project.url | prepend: site.baseurl }}">
+      <img class="col-1-6" src="{{ project.thumbnail }}" />
+    </a>
+  </div>
+  
+  {% endfor %}
+
+</div>

@@ -1,0 +1,17 @@
+---
+layout: archive
+---
+
+<ul class="blog-archive blog-list">
+  {% for post in site.posts %}
+
+  <li>
+
+    <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+    <h2><a href="{{post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    <p>{{ post.hook }}</p>
+
+  </li>
+
+  {% endfor %}
+</ul>

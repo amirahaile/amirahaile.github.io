@@ -1,0 +1,28 @@
+# Site settings
+title: amirahaile – designer + developer 
+email: amira.dhaile@gmail.com
+
+description: Amira Hailemariam is a graphic designer and novice front-end web developer.
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site"
+
+collections:
+  projects: 
+    output: true
+    permalink: /projects/:path/
+
+twitter_username: amirahaile
+github_username:  amirahaile
+
+
+# Build settings
+markdown: kramdown
+sass: {
+    style: compressed
+    # require: susy
+}
+
+exclude: ['amirahaile.github.io']
+
+# Gems

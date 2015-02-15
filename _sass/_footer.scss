@@ -1,0 +1,41 @@
+footer {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  bottom: 0;
+  height: 27px; 
+  margin: 16px 0 15px 0;
+
+  a {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .soc-media-links {
+    float: right;
+    text-align: justify;
+    width: 75%;
+    display: none;
+
+    a {
+      display: inline-block;
+      height: 27px;
+    }
+
+    :after {
+      content: "";
+      width: 150px;
+      width: 100%;
+      display: inline-block;
+    }
+  }
+
+  :after {
+    content: "";
+    background-image: none;
+  }
+}
+

@@ -1,0 +1,91 @@
+h1, h2, h3, p, small {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, nav {
+  font-family: $header-font-stack;
+  color: $clr-primary; 
+}
+
+time, p, small {
+  font-family: $body-font-stack;
+  color: #DFDBC4; 
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 44px;
+  color: $dk-secondary;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 31px;
+  line-height: 42px;
+  font-weight: 700;
+
+  a {
+    color: $clr-primary;
+  }
+}
+
+h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px; 
+  position: relative;
+  top: 21px;
+  z-index: 3;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  color: $dk-secondary;
+  line-height: 34px; 
+  padding-top: 12px;
+
+  strong {
+    font-weight: 700;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+}
+
+time {
+  line-height: 30px;
+}
+
+small {
+  font-size: 10px;
+  text-align: center;
+  line-height: 11px;
+  color: #DAD6BD;
+  display: block;
+}
+
+nav a {
+  color: $clr-primary;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none; 
+  
+  &:hover {
+    color: $dk-secondary; 
+    border: none;
+  }
+}
+
+footer a {
+  font-family: $header-font-stack;
+  weight: 600;
+  color: $clr-primary;
+  font-size: 20px;
+  line-height: 27px;
+}
